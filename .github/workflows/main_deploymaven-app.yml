@@ -38,7 +38,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: deploy to tomcat
-        run: curl -v -u ${{ secrets.TOMCAT_USER }}:${{ secrets.TOMCAT_PASSWORD }} -T /home/runner/work/jomacs-webapps/jomacs-webapps/target/web-app.war 'http://ec2-34-205-62-184.compute-1.amazonaws.com:8080//manager/text/deploy?path=/myweb-app1'
+        run: curl -v -u ${{ secrets.TOMCAT_USER }}:${{ secrets.TOMCAT_PASSWORD }} -T /home/runner/work/gihub-azure/gihub-azure/target/web-app.war 'http://ec2-34-205-62-184.compute-1.amazonaws.com:8080//manager/text/deploy?path=/myweb-app1'
 
   deploy:
     runs-on: windows-latest
